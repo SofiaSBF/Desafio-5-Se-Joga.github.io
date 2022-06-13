@@ -2,7 +2,7 @@
     z-index: auto;
 }
 
-.fundo {
+.background {
     display: flex;
     background-color: #C57BAD;
     width: 1800px;
@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-.botao {
+.button {
     width: 136px;
     height: 113px;
     font-family: 'Poppins';
@@ -41,12 +41,12 @@
     box-shadow: -3px 2px 2px 2px;
 }
 
-.botao:hover {
+.button:hover {
     background-color: rgb(0, 0, 0);
     color: #fff
 }
 
-#resultado {
+#answers {
     display: flex;
     position: fixed;
     background-color: #F79AD9;
