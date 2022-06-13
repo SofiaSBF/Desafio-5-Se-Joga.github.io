@@ -38,7 +38,7 @@
                             <td><button class="button onclick="insert('*')">*</button></td>
                             <td><button class="button roseshadown-button" onclick="insert('0')">0</button></td>
                         </tr>
-                        <td><button class="button space-button" onclick="calcular()">=</button></td>
+                        <td><button class="button space-button" onclick="calculate()">=</button></td>
             </table>
         </div>
 </body>
@@ -57,7 +57,7 @@
         document.getElementById('answers').innerHTML = answers.substring(0, answers.length - 1);
     }
 
-    function calcular() {
+    function calculate() {
         var answers = document.getElementById('answers').innerHTML;
         if (answers) {
             document.getElementById('answers').innerHTML = eval(answers);
