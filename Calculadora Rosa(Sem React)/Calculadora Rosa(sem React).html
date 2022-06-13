@@ -10,59 +10,59 @@
 </head>
 
 <body>
-    <div class="fundo">
+    <div class="background">
         <div class="tbody">
             <table>
-                <class id="resultado">
+                <class id="answers">
                     </id>
                     <tr>
-                        <td><button class="botao" onclick="clean()">C</button></td>
-                        <td><button class="botao" onclick="back()">Del</button></td>
-                        <td><button class="botao" onclick="insert('/')"> /</button></td>
-                        <td><button class="botao roseshadown-button" onclick="insert('7')">7</button></td>
+                        <td><button class="button" onclick="clean()">C</button></td>
+                        <td><button class="button" onclick="back()">Del</button></td>
+                        <td><button class="button" onclick="insert('/')"> /</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('7')">7</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao roseshadown-button" onclick="insert('8')">8</button></td>
-                        <td><button class="botao roseshadown-button" onclick="insert('9')">9</button></td>
-                        <td><button class="botao" onclick="insert('+')">+</button></td>
-                        <td><button class="botao roseshadown-button" onclick="insert('4')">4</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('8')">8</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('9')">9</button></td>
+                        <td><button class="button onclick="insert('+')">+</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('4')">4</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao roseshadown-button" onclick="insert('5')">5</button></td>
-                        <td><button class="botao roseshadown-button" onclick="insert('6')">6</button></td>
-                        <td><button class="botao" onclick="insert('-')">-</button></td>
-                        <td><button class="botao roseshadown-button" onclick="insert('1')">1</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('5')">5</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('6')">6</button></td>
+                        <td><button class="button onclick="insert('-')">-</button></td>
+                        <td><button class="button roseshadown-button" onclick="insert('1')">1</button></td>
                         <tr>
-                            <td><button class="botao roseshadown-button" onclick="insert('2')">2</button></td>
-                            <td><button class="botao roseshadown-button" onclick="insert('3')">3</button></td>
-                            <td><button class="botao" onclick="insert('*')">*</button></td>
-                            <td><button class="botao roseshadown-button" onclick="insert('0')">0</button></td>
+                            <td><button class="button roseshadown-button" onclick="insert('2')">2</button></td>
+                            <td><button class="button roseshadown-button" onclick="insert('3')">3</button></td>
+                            <td><button class="button onclick="insert('*')">*</button></td>
+                            <td><button class="button roseshadown-button" onclick="insert('0')">0</button></td>
                         </tr>
-                        <td><button class="botao space-button" onclick="calcular()">=</button></td>
+                        <td><button class="button space-button" onclick="calcular()">=</button></td>
             </table>
         </div>
 </body>
 <script>
     function insert(num) {
-        var numero = document.getElementById('resultado').innerHTML;
-        document.getElementById('resultado').innerHTML = numero + num;
+        var number = document.getElementById('answers').innerHTML;
+        document.getElementById('answers').innerHTML = number + num;
     }
 
     function clean() {
-        document.getElementById('resultado').innerHTML = "";
+        document.getElementById('answers').innerHTML = "";
     }
 
     function back() {
-        var resultado = document.getElementById('resultado').innerHTML;
-        document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+        var resultado = document.getElementById('answers').innerHTML;
+        document.getElementById('answers').innerHTML = answers.substring(0, resultado.length - 1);
     }
 
     function calcular() {
-        var resultado = document.getElementById('resultado').innerHTML;
-        if (resultado) {
-            document.getElementById('resultado').innerHTML = eval(resultado);
+        var answers = document.getElementById('answers').innerHTML;
+        if (answers) {
+            document.getElementById('answers').innerHTML = eval(answers);
         } else {
-            document.getElementById('resultado').innerHTML = "Nada..."
+            document.getElementById('answers').innerHTML = "Nada..."
         }
     }
 </script>
