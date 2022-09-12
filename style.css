@@ -47,7 +47,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     background-color: #F79AD9;
     width: 546px;
     height: 90px;
