@@ -5,11 +5,3 @@ Pensei em organizar o código no formato Docker.
 
 <h2>Desafio 5 - Visual</h2>
 <img src="https://i.ibb.co/yFqhRvM/calculadora-rosa-img.png" alt="calculadora-rosa-img" border="0">
-<h2>Site</h2>
-Hospedei o site no Github pages.
-<div style="float:left;">
-    <span style="display:inline;">
-<img src="https://i.ibb.co/Gcx9Yx3/site.png" alt="Site" height="30px" width="30px"><a href="https://bit.ly/3BbTNZk">Acesse o site aqui</a>
-      </div>
-  
-  
